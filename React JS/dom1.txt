@@ -1,0 +1,92 @@
+What is the DOM (Document Object Model) in web development?
+
+Answer: The DOM is a programming interface for web documents. It represents the structure of HTML/XML documents as a tree of objects where each node is an object representing a part of the document.
+
+How do you access elements in the DOM using JavaScript?
+
+Answer: You can access elements in the DOM using methods like getElementById, getElementsByClassName, getElementsByTagName, querySelector, and querySelectorAll.
+
+What is the difference between getElementById and getElementsByClassName?
+
+Answer:
+getElementById: Returns the element with the specified ID.
+getElementsByClassName: Returns a collection of elements with the specified class name.
+
+What is event delegation, and why is it useful?
+
+Answer: Event delegation is a technique for handling events where you attach a single event listener to a parent element instead of attaching multiple listeners to individual child elements. It's useful for dynamically created elements and improves performance by reducing the number of event listeners.
+
+What are event bubbling and event capturing in the DOM?
+
+Answer:
+Event Bubbling: When an event occurs on a nested element, it triggers the same event on all of its ancestors.
+Event Capturing: The event is captured from the top of the DOM hierarchy down to the target element.
+
+How do you create, append, and remove elements in the DOM using JavaScript?
+
+Answer: You can create elements using document.createElement, append elements using methods like appendChild or insertBefore, and remove elements using methods like removeChild or remove.
+
+What is the purpose of the textContent and innerHTML properties in the DOM?
+
+Answer:
+textContent: Represents the text content of a node and its descendants.
+innerHTML: Represents the HTML content of a node's descendants. It allows you to manipulate the HTML content of an element, but be cautious of security risks like XSS (Cross-Site Scripting) attacks when using it with user-generated content.
+
+How do you handle form submissions in the DOM?
+
+Answer: You can handle form submissions by attaching an event listener to the submit event of the form element and preventing the default behavior using event.preventDefault(). Then, you can access form data using the FormData API or by accessing individual form elements.
+
+What is the purpose of the setAttribute and getAttribute methods in the DOM?
+
+Answer:
+setAttribute: Sets the value of an attribute on the specified element.
+getAttribute: Retrieves the value of the specified attribute on the specified element.
+
+What is the difference between parentNode and parentElement in the DOM?
+
+Answer:
+parentNode: Returns the parent node of the specified node, which can be any node type (element, text, comment, etc.).
+parentElement: Returns the parent element specifically, excluding other node types like text and comments.
+
+
+
+What is the difference between appendChild and insertBefore methods in the DOM?
+Answer:
+appendChild: Appends a node as the last child of a specified parent node.
+insertBefore: Inserts a node before a specified existing child node in the DOM hierarchy.
+
+Explain the concept of event propagation in the DOM.
+Answer: Event propagation refers to the process of an event being passed through the DOM hierarchy from the target element to its ancestors (event bubbling) or from the top of the hierarchy to the target element (event capturing).
+
+What is the purpose of the classList property in the DOM?
+
+Answer: The classList property provides an interface to manipulate an element's list of classes. It contains methods like add, remove, toggle, and contains for adding, removing, toggling, and checking the presence of classes.
+
+How do you dynamically create and append elements with event listeners in the DOM?
+
+Answer: You can dynamically create elements, attach event listeners to them using addEventListener, and then append them to the DOM using methods like appendChild.
+What is event delegation, and why is it considered a best practice in web development?
+
+Answer: Event delegation is a technique where a single event listener is attached to a parent element to handle events for all its descendants. It's considered a best practice because it improves performance by reducing the number of event listeners and allows for handling dynamically added elements.
+What are data attributes (data-*) in HTML, and how can you access them in the DOM using JavaScript?
+
+Answer: Data attributes (data-*) allow you to store custom data for an element. You can access them in JavaScript using the dataset property of the element, which returns an object containing all the data attributes.
+
+Explain the difference between innerHTML, innerText, and textContent properties in the DOM.
+
+Answer:
+innerHTML: Represents the HTML content of an element's descendants.
+innerText: Represents the visible text content of an element, excluding hidden or styled text.
+textContent: Represents the text content of an element's descendants, including all text, whitespace, and line breaks.
+
+How can you detect when the DOM is fully loaded in JavaScript?
+
+Answer: You can detect when the DOM is fully loaded using the DOMContentLoaded event or by checking the document.readyState property.
+What is the purpose of the querySelector and querySelectorAll methods in the DOM?
+
+Answer:
+querySelector: Returns the first element within the document that matches the specified CSS selector.
+querySelectorAll: Returns a static NodeList containing all elements within the document that match the specified CSS selector.
+Explain the concept of event bubbling and how it impacts event handling in the DOM.
+
+Answer: Event bubbling is the process by which an event triggered on a nested element propagates up through its ancestors in the DOM hierarchy. It can impact event handling by triggering event listeners on parent elements, allowing for centralized event handling and delegation.
